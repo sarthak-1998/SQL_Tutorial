@@ -38,3 +38,22 @@ CREATE TABLE <Table Name>(
     .
 
 );
+
+CREATE TABLE <Table Name>(
+    Column 1 <Datatype>,
+    column 2 <Datatype>,
+    .
+    .
+
+); 
+
+
+CREATE TABLE PERSON(
+    -> Name VARCHAR(15),
+    -> DOB DATE,
+    -> GENDER ENUM ('Male','Female','Others'),
+    -> MaritalStatus ENUM('Single','Married'),
+    -> Salary DECIMAL);
+    
+  
+  
