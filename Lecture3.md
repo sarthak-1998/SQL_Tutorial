@@ -59,3 +59,47 @@ ALTER TABLE students2 MODIFY Name VARCHAR(40) DEFAULT "Not Known";
 ALTER TABLE students2 MODIFY Name VARCHAR(40) DEFAULT "Not Known" NOT NULL;
 
 ALTER TABLE students2 MODIFY Name INT(10);   // Error when not correct data type
+
+
+
+
+
+
+ALTER TABLE <table name> 
+ADD <new column name> <data type> ..{constraints if any};
+
+Sample command -
+ALTER TABLE students2 ADD Class int(2) ;
+
+
+
+ALTER TABLE <table name>
+ADD <new column name> <data type> FIRST; // add as first column
+
+Sample Command -
+ALTER TABLE students2 ADD Roll_No int(10) FIRST;
+
+
+
+ALTER TABLE <table name>
+ADD <new column name> <data type> AFTER <column name>; 
+// Add column after a specific column 
+
+Sample Command-
+ALTER TABLE students2 ADD Mobile int(10) DEFAULT 0 AFTER Score ;
+
+
+
+
+ALTER TABLE <table name>
+DROP <column name>;
+
+Sample Command-
+
+ ALTER TABLE students2 DROP Roll_No;
+
+ ALTER TABLE students2 DROP Mobile, ADD Section VARCHAR(5) DEFAULT "A" ;
+ // Add and delete columns simultaneously 
+
+
+ 
