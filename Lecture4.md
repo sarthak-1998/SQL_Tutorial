@@ -61,3 +61,43 @@ SELECT COUNT(*) AS "Count of Students" FROM students2;
 
 SELECT COUNT(*) FROM students2 WHERE Score >70 ;
 
+
+
+SELECT SUM(<column name>) FROM <table name>;
+
+Sample Command -
+SELECT SUM(Score) FROM students2;
+
+//
+
+SELECT AVG(<column name>) FROM <table name> 
+WHERE {conditions...};
+
+Sample command -
+SELECT AVG(Score) FROM students2;
+
+//
+
+SELECT MIN(<column name>) FROM <table name>;
+
+Sample Command -
+SELECT MIN(Score) FROM students2;
+
+//
+
+SELECT MAX(<column name>) FROM <table name>;
+
+Sample command - 
+SELECT MAX(Score) FROM students2;
+
+//
+
+SELECT STDDEV(<column name>) FROM <table name>;
+
+Sample Command -
+SELECT STDDEV(Score) FROM students2;
+
+ 
+
+
+
